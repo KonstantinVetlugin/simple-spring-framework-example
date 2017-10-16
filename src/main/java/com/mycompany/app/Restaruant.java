@@ -1,13 +1,14 @@
 package com.mycompany.app;
 
 public class Restaruant {
-    String welcomeNote;
 
-    public void setWelcomeNote(String welcomeNote){
-        this.welcomeNote = welcomeNote;
+    IHotDrink hotDrink;
+
+    public void setHotDrink(IHotDrink hotDrink){
+        this.hotDrink = hotDrink;
     }
 
-    public void greetCustomer(){
-        System.out.println(welcomeNote);
+    public void prepareHotDrink(){
+        hotDrink.prepareHotDrink();
     }
 }

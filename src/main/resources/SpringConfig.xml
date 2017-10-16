@@ -3,6 +3,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
     <bean id="restaruantBean" class="com.mycompany.app.Restaruant">
-        <property name="welcomeNote" value="Welcome!"/>
+        <property name="hotDrink" ref="teaBean"/>
     </bean>
+    <bean id="teaBean" class="com.mycompany.app.Tea"></bean>
 </beans>
