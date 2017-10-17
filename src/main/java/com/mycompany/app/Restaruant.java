@@ -1,14 +1,17 @@
 package com.mycompany.app;
 
+import java.util.List;
+
 public class Restaruant {
 
-    IHotDrink hotDrink;
+    private List restaruantWaitersList;
 
-    public void setHotDrink(IHotDrink hotDrink){
-        this.hotDrink = hotDrink;
+    public void setRestaruantWaitersList(List restaruantWaitersList){
+        this.restaruantWaitersList = restaruantWaitersList;
     }
 
-    public void prepareHotDrink(){
-        hotDrink.prepareHotDrink();
+    public void displayWaitersNames(){
+
+        System.out.println("All waiters working in Restaruant : " + restaruantWaitersList);
     }
 }
