@@ -7,8 +7,13 @@ public class TestSpringProject {
     public static void main(String[] args){
         ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
 
-        Restaruant restaruantObj = (Restaruant) context.getBean("restaruantBean");
+        Restaruant restaruantObj1 = (Restaruant) context.getBean("restaruantBean");
+        restaruantObj1.setwelcomeNote("Object1 is setting welcome note property");
+        restaruantObj1.greetCustomer();
 
-        restaruantObj.displayWaitersNames();
+        Restaruant restaruantObj2 = (Restaruant) context.getBean("restaruantBean");
+        restaruantObj2.greetCustomer();
+
+
     }
 }

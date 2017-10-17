@@ -4,14 +4,14 @@ import java.util.List;
 
 public class Restaruant {
 
-    private List restaruantWaitersList;
+    private String welcomeNote;
 
-    public void setRestaruantWaitersList(List restaruantWaitersList){
-        this.restaruantWaitersList = restaruantWaitersList;
+    public void setwelcomeNote(String welcomeNote){
+        this.welcomeNote = welcomeNote;
     }
 
-    public void displayWaitersNames(){
+    public void greetCustomer(){
 
-        System.out.println("All waiters working in Restaruant : " + restaruantWaitersList);
+        System.out.println(welcomeNote);
     }
 }
